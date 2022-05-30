@@ -1,0 +1,32 @@
+
+
+@font-face {
+    font-family: 'Video';
+    src: local('Video SemiBold'), local('Video-SemiBold'),
+        url('../../fonts/Video-SemiBold.woff2') format('woff2'),
+        url('../../fonts/Video-SemiBold.woff') format('woff'),
+        url('../../fonts/Video-SemiBold.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Roboto-Regular';
+    src: url('../../fonts/Roboto-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Roboto-Light';
+    src: url('../../fonts/Roboto-Light.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Calibri';
+    src: url('../../fonts/Calibri-Light.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+

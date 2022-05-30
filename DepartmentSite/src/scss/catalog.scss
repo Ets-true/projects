@@ -1,0 +1,467 @@
+@import "help/mixin.scss";
+@import "help/fonts.scss";
+
+$landing: #007023;
+$companyBlue: #0084FF;
+$shop: #A22B39;
+$info: #4332B2;
+
+
+$graphite:  #4D4D4D;
+$warning: #FF4747;
+$download: #E8E8EE;
+$success: #29CCA3;
+
+body{
+    // overflow-x: hidden;
+    overflow-y: hidden;
+}
+#Logo{
+    transition: all 0.5s;
+    z-index: 1;
+    position: fixed;
+    top: 0%;
+    left: 0%;
+    .logo {
+        @include marginTop(12);
+        @include marginLeft(34);
+        .logo_top {
+            font-family: "SourceSerif4-Regular";
+            @include fontSize(30);
+        }
+        .logo_bottom {
+            font-family: "Montserrat-Light";
+            @include marginTop(-8);
+            @include fontSize(14);
+            @include property(letter-spacing, 2.76);
+        }
+    }
+    @include mobile{
+        display: none;
+    }
+
+}
+
+
+
+
+.adaptive_wrapper{
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    .catalog{
+        position: absolute;
+        top: 50%; left: 50%;
+        transform: translate3d(-50%, -50%, 0);
+        @include size(1910, 950);
+
+        .catalog__title{
+            transition: all 1.2s;
+            font-family: "SourceSerif4-Regular";
+            @include fontSize(35);
+            margin: auto;
+            text-align: center;
+            @include marginTop(110);
+            opacity: 0;
+        }
+        .row{
+            transition: all 1.2s;
+            @include size(1910, 500);
+            display: flex;
+            justify-content: space-between;
+        
+            padding-left: 10px;
+            @include paddingLeft(128);
+            @include paddingRight(128);
+            @include paddingTop(108);
+            
+        
+            font-family: 'Montserrat-Regular';
+            @include fontSize(20);
+            opacity: 0;
+           
+            .column{
+                cursor: pointer;
+                transition: all 0.3s;
+                @include size(280, 410);
+                outline: 2px solid black;
+                outline-offset: -2px;
+                text-align: center;
+                color: white;
+                font-family: "Montserrat-Light";
+                position: relative;
+                &:hover{
+                    transform: translateY(-5px);
+                }
+                .column__title{
+                    @include marginTop(45);
+                    @include fontSize(25);
+                    @include property(line-height, 30);
+                }
+                .column__tags{
+                    position: absolute;
+                    @include fontSize(17);
+                    @include size(257, 50);
+                    @include bottom(46);
+                    left: 50%;
+                    transform: translateX(-50%);
+                    
+                    .tag__row{
+                        display: flex;
+                        justify-content: space-between;
+                        @include property(width, 255);
+                        // background-color: red;
+                        .tag{
+                            display: flex;
+                            justify-content: space-between;
+                            
+                            .dott{
+                                @include size(5,5);
+                                background-color: white;
+                                @include property( border-radius, 2.5);
+                                @include marginRight(4);
+                                @include marginTop(10);
+                            }
+                            
+                        }
+                        .ls{
+                            @include property(letter-spacing, 1)
+                        }
+                        
+                    }
+                    .perspective{
+                        justify-content: right;
+                    }
+
+                    
+                    
+                }
+
+                .box{
+                    transition: all 0.3s;
+                    position: absolute;
+                    @include bottom(-23);
+                    @include left(-23);
+                    @include size(327, 34);
+                    background-image: url("../media/img/box.png");
+                    background-size: 100% 100%;
+                    opacity: 0.4;
+                    // opacity: 0;
+                    z-index: 0;
+                }
+            }
+            #landing{
+                background-image: url(../media/img/landing.png);
+                background-size: 100% 100%;
+            }
+            #company{
+                background-image: url(../media/img/company.png);
+                background-size: 100% 100%;
+                .column__tags{
+                    @include bottom(70)
+                }
+            }
+            #shop{
+                background-image: url(../media/img/shop.png);
+                background-size: 100% 100%;
+            }
+            #info{
+                
+                .column__title{
+                    @include marginTop(35);
+                }
+                background-image: url(../media/img/info.png);
+                background-size: 100% 100%;
+                .column__tags{
+                    .tag__row{
+                        @include property(width, 262);
+                    }
+                }
+            }
+            #redisign{
+                background-image: url(../media/img/redisign.png);
+                background-size: 100% 100%;
+                .alert{
+                    transition: all 0.3s;
+                    font-family: "Montserrat-light";
+                    @include fontSize(20);
+                    @include property(line-height, 24);
+                    position: absolute;
+                    @include top(-76);
+                    @include left(28);
+                    text-align: center;
+                    color: $graphite;
+                    opacity: 0;
+                }
+            }
+        
+        }
+    }
+    .purchase{
+        position: absolute;
+        top: 50%; left: 50%;
+        transform: translate3d(-50%, -50%, 0);
+        @include size(1910, 950);
+        @include paddingTop(155);
+        @include paddingLeft(254);
+        .purchase__title{
+            font-family: "SourceSerif4-Regular";
+            @include fontSize(30);
+            display: flex;
+        }
+        .choise{
+            // overflow: hidden;
+            .choose{
+                @include marginLeft(20);
+            }
+            .line_body{
+                width: 100%;
+                height: 2px;
+                border-radius: 2px;
+                margin-left: 10px;
+                position: relative;
+                // background-color: grey;
+                .line_go{
+                    transition: all 0.5s;
+                    position: absolute;
+                    top: 0;
+                    // left: 50%;
+                    width: 0px;
+                    height: 2px;
+                    background-color: $graphite;
+                    border-radius: 2px;
+
+                    animation-name: line;
+                    animation-duration: 5s;
+                    animation-iteration-count: infinite;
+                    opacity: 0;
+                }
+            }
+        }
+        
+        .purchase__content {
+            display: flex;
+            @include marginTop(98);
+            .purchase__info {
+                @include marginTop(16);
+                .purchase__text {
+                    font-family: "Montserrat-light";
+                    @include fontSize(23);
+                }
+                .purchase__link {
+                    display: flex;
+                    @include marginTop(30);
+                    .icon {
+                        @include size(23,26);
+                        img{
+                            width: 100%;
+                            height: 100%;
+                        }
+                    }
+                    
+                    a{
+                        font-family: "Montserrat-LightItalic";
+                        @include fontSize(19); 
+                        @include marginLeft(13);
+                        @include marginTop(1);
+                        color: $graphite;
+                    }
+                }
+
+                .buttonSuccess{
+                    margin: auto;
+                    @include marginLeft(-12);
+                    @include marginTop(75);
+                    @include property(width, 460);
+                    display: flex;
+                    justify-content: center;
+                    font-family: "Montserrat-Italic";
+                    @include fontSize(25);
+                    button{
+                        cursor: pointer;
+                        @include marginRight(34);
+                        @include marginLeft(-24);
+                        border: none; 
+                        outline: none;
+                        background-color: white;
+                    }
+                    .success{
+                        transition: all 0.5s;
+                        opacity: 0;
+                    }
+                }
+                
+            }
+            .purchase__dragdrop {
+                @include marginLeft(50);
+                @include size(730, 144);
+                border: 2px solid black;
+                position: relative;
+                box-shadow: 4px 4px $graphite;
+                position: relative;
+                .DownloadedFile{
+                    display: flex;
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate3d(-50%,-50%,0);
+                    .delete{
+                        @include size(12,12);
+                        
+                        @include marginRight(14);
+                        @include marginTop(9);
+                        position: relative;
+                        &:hover{
+                            cursor: pointer;
+                        }
+                        &::after{
+                            content: '';
+                            position: absolute;
+                            top: 0;left: 0;
+                            width: 1px;
+                            height: 100%;
+                            background-color: red;
+                            transform: rotateZ(-45deg);
+                        }
+                        &::before{
+                            content: '';
+                            position: absolute;
+                            top: 0;left: 0;
+                            width: 1px;
+                            height: 100%;
+                            background-color: red;
+                            transform: rotateZ(45deg);
+                        }
+                    }
+                    .fileName{
+                        font-family: "Montserrat-LightItalic";
+                        @include fontSize(19)
+                    }
+                }
+                
+                .Download{
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate3d(-50%,-50%,0);
+                    font-family: "Montserrat-Regular";
+                    @include fontSize(19);
+                    color: $graphite;
+                }
+                label{
+                    display: flex;
+                    @include property(width, 375);
+                    .img-svg{
+                        @include size(12, 21);
+                        @include marginRight(11);
+                        @include marginTop(4);
+                    }
+                    .img-svg .cls-1{
+                        stroke: $graphite;
+                    }
+                    cursor: pointer;
+                    font-family: "Montserrat-Regular";
+                    @include fontSize(19);
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate3d(-50%,-50%,0);
+                    .input__file{
+                        color: $graphite;
+                    }
+                }
+                input{
+                    @include size(0.1,0.1);
+                    opacity: 0;
+                    position: absolute;
+                    top: 50%;
+                    @include left(180);
+                    transform: translateY(-50%);
+                }
+            }
+            
+           
+        }
+    }
+    .form__info {
+        // margin: auto;
+        position: absolute;
+        bottom: 0;
+        @include paddingLeft(150);
+        @include paddingRight(135);
+        @include paddingBottom(24);
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        font-family: 'Montserrat-Light';
+        .info__phone {
+            @include fontSize(19);
+            @include marginRight(542);
+        }
+        .info__copyright {
+            @include fontSize(20);
+            @include marginRight(473);
+            @include marginTop(7);
+        }
+        .info__mail {
+            @include fontSize(20);
+        }
+    }
+    @include mobile{
+        display: none;
+    }
+}
+
+.mobile{
+    display: none;
+    font-family: "Montserrat-Light";
+    font-size: 20px;
+    text-align: center;
+    line-height: 30px;
+    margin-top: 100px;
+    width: auto;
+    height: auto;
+    @include mobile{
+        display: block;
+    }
+}
+
+
+
+@keyframes line{
+    0%{
+        width: 0px;
+        left: 0;
+    }
+    20%{
+        width: 70%;
+        left: 10%;
+    }
+   
+    
+    
+    
+    40%{
+        width: 0px;
+        left: 100%;
+    }
+    
+}
+
+
+
+
+
+
+
+.dropArea{
+    width: 400px;
+    height: 400px;
+    background-color: white;
+    border-radius: 5px;
+    border: 2px solid grey;
+
+    @media(max-width: 1000px){
+        border: 2px;
+    }
+}

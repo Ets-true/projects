@@ -1,0 +1,927 @@
+.technology {
+    margin-top: 100px;
+    background-color: #FFFFFA;
+}
+.technology__aboutTech {
+    padding-top: 100px;
+    padding-left: 278px;
+    padding-right: 134px;
+    padding-bottom: 72px;
+    position: relative;
+}
+.aboutTech__title {
+    
+}
+.aboutTech__text1 {
+    margin-top: 45px;
+}
+.aboutTech__tezis {
+    /* width: 883px; */
+    height: 112px;
+    position: relative;
+    margin-top: 69px;
+    margin-left: 221px;
+    padding-top: 31px;
+    padding-left: 35px;
+}
+
+.aboutTech__tezis::before {
+    content: '';
+    position: absolute;
+    top: 0; right: 0; bottom: 0; left: 0;
+    width: 2px;
+    max-height: 100%;
+    border-radius: inherit;
+    background: linear-gradient(to bottom, black 0%, #F27300 60%);
+}
+.aboutTech__text2 {
+    margin-top: 71px;
+}
+
+
+
+
+.technology__system {
+    background-color: #F8F9FA;
+    padding-top: 42px;
+}
+.system__title {
+    margin-left: 278px;
+    display: flex;
+}
+.system__patent {
+    display: flex;
+    margin-left: 686px;
+    margin-top: 15px;
+}
+.file__icon {
+    width: 39px;
+    height: 44px;
+    margin-left: 16px;
+    margin-top: -10px;
+}
+.technology__engineer {
+    margin-top: 60px;
+}
+.engineer__title {
+    display: flex;
+    margin-left: 168px;
+}
+.engineer__icon{
+    width: 49px;
+    height: 49px;
+    margin-right: 60px;
+    margin-top: -7px;
+}
+.engineer__info {
+    margin-top: 61px;
+    margin-left: 279px;
+}
+.egineer__main {
+    width: 1640px;
+    height: 2402px;
+    margin: auto;
+    margin-top: 80px;
+    padding-top: 66px;
+    background-color: #FFFFFA;
+    border-radius: 15px;
+    box-shadow: 0px 0px 24px #00000029;
+    position: relative;
+}
+.engineer__slider {
+    /* margin: auto; */
+    margin-left: 50px;
+    margin-right: 85px;
+    height: 933px;
+    border-width: 1px;
+    border-bottom-style: solid;
+    border-bottom-color: #C4C4C4;
+
+}
+
+.engineer__slider_slide_large {
+    width: 1086px;
+}
+.engineer__slider_slide_small {
+    width: 538px;
+}
+
+.engineer__slider_img {
+    margin: auto;
+    width: auto;
+    height: 656px;
+}
+.engineer__slider_text {
+    margin-top: 55px;
+    width: 100%;
+    text-align: center;
+}
+
+.slider__button_block{
+    position: absolute;
+    top: 833px;
+    left:1289px;
+    display: flex;
+}
+.slider__button_left {
+    transition: all 0.5s;
+    cursor: pointer;
+    width: 79px;
+    height: 42px;
+    background-color:#002266;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+}
+.slider__button_right {
+    transition: all 0.5s;
+    cursor: pointer;
+    margin-left: 1px;
+    width: 79px;
+    height: 42px;
+    background-color:#002266;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+.slick-disabled {
+    transition: all 0.5s;
+    opacity: 0.6;
+    pointer-events:none;
+}
+.slider__button_arrow{
+    width: 47px;
+    height: 27px;
+    margin:auto;
+    margin-top: 7px;
+}
+.arrow_left{
+    transform: rotate(180deg);
+}
+
+.engineer__text {
+    margin: auto;
+    width: 1532px;
+    height: 730px;
+    padding-top: 89px;
+    padding-left: 137px;
+    padding-right: 138px;
+    border-width: 1px;
+    border-bottom-style: solid;
+    border-bottom-color: #C4C4C4;
+    display: flex;
+    justify-content: space-between;
+}
+.en_text{
+    width: 536px;
+    /* background-color: grey; */
+}
+.engineer__scheme {
+    transition: all 0.25s;
+    width: 898px;
+    height: 517px;
+    margin: auto;
+    margin-top: 85px;
+    cursor: pointer;
+}
+.engineer__scheme:hover {
+    transition: all 0.25s;
+    width: 943px;
+    height: 543px;
+}
+
+
+.scheme__img {
+    height: 429px;
+    background-color: white;
+    border-width: 4px;
+    border-style: solid;
+    border-color: #E5E5E5;
+    border-bottom: 0;
+    background-image: url(../media/scheme_princ.jpg);
+    background-size: cover;
+    background-position: 50% 50%;
+}
+.scheme__title {
+    padding-top: 23px;
+    font-family: Montserrat-Bold;
+    font-size: 20px;
+    text-align: center;
+    height: 88px;
+    background-color: #F5F5F5;
+    border-width: 4px;
+    border-style: solid;
+    border-color: #E5E5E5;
+}
+
+.technology__chemistry {
+    margin-top: 130px;
+}
+.chemistry__title {
+    display: flex;
+    margin-left: 168px;
+}
+.chemistry__icon{
+    width: 49px;
+    height: 49px;
+    margin-right: 60px;
+    margin-top: -7px;
+}
+.chemistry__info {
+    margin-top: 39px;
+    margin-left: 279px;
+}
+
+.chemistry__opener {
+    width: 1640px;
+    background-color: #FFFFFA;
+    margin: auto;
+    margin-top: 64px;
+}
+.opener__visible {
+    padding-top: 50px;
+    padding-left: 138px;
+    border-top-width: 1px;
+    border-top-style: solid;
+    border-color: black;
+    position: relative;
+    height: 132px;
+}
+.border_none{
+    border: 0;
+}
+
+.opener__button {
+    position: absolute;
+    top: 52px;
+    right: 48px;
+    width: 27px;
+    height: 27px;
+    /* background-color: grey; */
+}
+
+.opener__arrow{
+    transform: rotate(90deg);
+}
+
+
+.opener__hidden {
+    height: 640px;
+    display: none;
+    
+    padding-left: 132px;
+}
+
+
+.hidden__wrap{
+    padding-top: 150px;
+    display: flex;
+    font-family: Montserrat-Bold;
+    font-size: 20px;
+    /* background-color: grey; */
+    position: relative;
+}
+.opener__columnNames {
+    font-family: Montserrat-regular;
+    font-size: 15px;
+    color: #888888;
+    position: absolute;
+    top: 50px;
+    left: 0;
+    display: flex;
+}
+.operation {
+}
+.pollution_delete {
+    margin-left: 275px;
+}
+.pollution {
+    margin-left: 360px;
+}
+
+
+.opener__hidden_left {
+    width: 333px;
+    /* background-color: grey; */
+}
+.opener__hidden_operation {
+    margin-bottom: 100px;
+    margin-right: 50px;
+}
+
+.opener__hidden_right {
+    height: 366px;
+    border-left-style:solid;
+    border-width: 3px;
+    border-color: black;
+    padding-left: 147px;
+    /* background-color: grey; */
+    /* padding-top: 41px; */
+}
+.hidden__block{
+    margin-bottom: 104px;
+}
+.row {
+    display: flex;
+    margin-bottom: 27px;
+    
+}
+
+
+.Col__tezis {
+    display: flex;
+    width: 470px;
+}
+.Col__point {
+    flex-shrink: 0;
+    width: 8px;
+    height: 8px;
+    border-radius: 4px;
+    background-color: black;
+    margin-left: 0px;
+    margin-top: 10px;
+}
+
+.Col__el {
+    margin-left: 16px;
+}
+
+.Col_tezis_2{
+    margin-left: 88px;
+}
+
+.center{
+    margin-top: 120px;
+}
+
+.technology__form{
+    margin-top: 125px;
+    width: 100%;
+    height: 244px;
+    background-color: #FFFFFA;
+    box-shadow: 0px 0px 24px #00000029;
+}
+
+.form__title {
+    font-family: Montserrat-Bold;
+    font-size: 30px;
+    margin: auto;
+    text-align: center;
+    padding-top: 78px;
+}
+.form__button {
+    cursor: pointer;
+    /* position: absolute; */
+    margin: auto;
+    margin-top: 35px;
+    width: 305px;
+    height: 53px;
+    background-color: #002266;
+    border-radius: 15px;
+    text-align: center;
+    font-family: Montserrat-Regular;
+    font-size: 20px;
+    color: white;
+    padding-top: 10px;
+    opacity: 0.4;
+}
+
+.technology__result{
+    margin-top: 25px;
+    padding-top: 80px;
+    padding-right: 134px;
+    padding-bottom: 72px;
+    background-color: #F8F9FA;
+}
+
+.result__title {
+    display: flex;
+    margin-left: 178px;
+}
+.result__medal{
+    width: 48px;
+    height: 48px;
+    margin-right: 54px;
+    margin-top: -5px;
+}
+.result__text1 {
+    margin-left: 278px;
+    margin-top: 45px;
+}
+.result__tezis {
+    /* width: 883px; */
+    height: 112px;
+    position: relative;
+    margin-top: 69px;
+    margin-left: 495px;
+    padding-top: 31px;
+    padding-left: 35px;
+}
+
+.result__tezis::before {
+    content: '';
+    position: absolute;
+    top: 0; right: 0; bottom: 0; left: 0;
+    width: 2px;
+    max-height: 100%;
+    border-radius: inherit;
+    background: linear-gradient(to bottom, black 0%, #F27300 60%);
+}
+.result__text2 {
+    margin-left: 278px;
+    margin-top: 71px;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+@media(max-width: 768px){
+    .technology {
+        margin-top: 52px;
+    }
+    .technology__aboutTech {
+        padding-top: 62px;
+        padding-left: 37px;
+        padding-right: 37px;
+        padding-bottom: 65px;
+        position: relative;
+    }
+    .aboutTech__title {
+        
+    }
+    .aboutTech__text1 {
+        margin-top: 30px;
+    }
+    .aboutTech__tezis {
+        width: 336px;
+        height: 135px;
+        position: relative;
+        margin-top: 60px;
+        margin-left: -10px;
+        padding-top: 30px;
+        padding-left: 0px;
+        text-align: center;
+    }
+    
+    .aboutTech__tezis::before {
+        content: '';
+        position: absolute;
+        top: 0; right: 0; bottom: 0; left: 0;
+        height: 2px;
+        width: 100%;
+        border-radius: inherit;
+        background: linear-gradient(to right, black 0%, #F27300 60%);
+    }
+    .aboutTech__tezis::after {
+        content: '';
+        position: absolute;
+        right: 0; bottom: 0; left: 0;
+        height: 2px;
+        width: 100%;
+        border-radius: inherit;
+        background: linear-gradient(to right, black 0%, #F27300 60%);
+    }
+    .aboutTech__text2 {
+        margin-top: 71px;
+    }
+    
+    .technology__system {
+        padding-top: 0px;
+    }
+    .system__title {
+        margin-left: 0px;
+        text-align: center;
+        display: block
+    }
+    .system__patent {
+        display: block;
+        margin-left: 0px;
+        margin-top: 18px;
+    }
+    .file__icon {
+        width: 23px;
+        height: 26px;
+        margin-left: 0px;
+        margin-top: 0px;
+        margin: auto;
+        margin-top: 10px;
+
+    }
+    .technology__engineer {
+        margin-top: 42px;
+    }
+    .engineer__title {
+        display: flex;
+        margin-left: 38px;
+    }
+    .engineer__icon{
+        width: 18px;
+        height: 18px;
+        margin-right: 37px;
+        margin-top: 2px;
+    }
+    .engineer__info {
+        margin-top: 30px;
+        margin-left: 37px;
+        margin-right: 37px;
+    }
+    .egineer__main {
+        width: 335px;
+        height: auto;
+        margin: auto;
+        margin-top: 50px;
+        padding-top: 40px;
+        padding-bottom: 35px;
+        position: relative;
+    }
+    .engineer__slider {
+        display: none; 
+        width: 300px;
+        margin-left: 0px;
+        margin-right: 0px;
+        margin: auto;
+        height: auto;
+        border-width: 1px;
+        border-bottom-style: solid;
+        border-bottom-color: grey;
+        padding-bottom: 91px;
+    
+    }
+    .engineer__slider_slide_large {
+        width: 302px;
+        margin-right: 28px;
+    }
+    .engineer__slider_slide_small {
+        width: 135px;
+        margin-right: 28px;
+    }
+    .engineer__slider_img {
+        margin: auto;
+        width: auto;
+        height: 202px;
+    }
+    .engineer__slider_text {
+        margin-top: 27px;
+        width: 100%;
+        text-align: center;
+    }
+    .slider__button_block{
+        position: absolute;
+        top: 340px;
+        left: 37px;
+        display: flex;
+    }
+    .slider__button_left {
+        transition: all 0.5s;
+        cursor: pointer;
+        width: 131px;
+        height: 24px;
+        background-color:#002266;
+        border-top-left-radius: 15px;
+        border-bottom-left-radius: 15px;
+    }
+    .slider__button_right {
+        transition: all 0.5s;
+        cursor: pointer;
+        margin-left: 1px;
+        width: 131px;
+        height: 24px;
+        background-color:#002266;
+        border-top-right-radius: 15px;
+        border-bottom-right-radius: 15px;
+    }
+    .slider__button_arrow{
+        width: 28px;
+        height: 17px;
+        margin:auto;
+        margin-top: 4px;
+    }
+    .engineer__text {
+        margin: auto;
+        width: 300px;
+        height: auto;
+        padding-top: 30px;
+        padding-left: 0px;
+        padding-right: 0px;
+        border-width: 1px;
+        border-bottom-style: solid;
+        border-bottom-color: #C4C4C4;
+        display: block       ;
+        justify-content: space-between;
+    }
+    .en_text{
+        width: 300px;
+        margin-bottom: 20px;
+        /* background-color: grey; */
+    }
+    .engineer__scheme {
+        transition: none !important;
+        width: 300px;
+        height: auto;
+        margin: auto;
+        margin-top: 35px;
+        cursor: pointer;
+        background-color: red;
+    }
+    .engineer__scheme:hover {
+        transition: none !important;
+        width: 300px;
+        height: auto;
+    }
+    .scheme__img {
+        height: 250px;
+        background-color: white;
+        border-width: 2px;
+        border-style: solid;
+        border-color: #E5E5E5;
+        border-bottom: 0;
+    }
+    .scheme__title {
+        padding-top: 12px;
+        font-size: 10px;
+        height: 41px;
+        border-width: 2px;
+    }
+    .technology__chemistry {
+        margin-top: 130px;
+    }
+    .chemistry__title {
+        display: flex;
+        margin-left: 30px;
+    }
+    .chemistry__icon{
+        width: 21px;
+        height: 25px;
+        margin-right: 15px;
+        margin-top: -7px;
+    }
+    .chemistry__info {
+        margin: auto;
+        margin-top: 39px;
+        width: 300px;
+    }
+    .chemistry__opener {
+        width: 300px;
+        margin: auto;
+        margin-top: 64px;
+    }
+
+    .opener__visible {
+        padding-top: 21px;
+        padding-left: 18px;
+        position: relative;
+        height: 81px;
+    }
+
+    .opener__title {
+        width: 145px;
+    }
+    .opener__button {
+        position: absolute;
+        top: 30px;
+        right: 48px;
+        width: 20px;
+        height: 20px;
+        /* background-color: grey; */
+    }
+    
+    .opener__arrow{
+        transform: rotate(90deg);
+    }
+
+    .hidden__wrap{
+        display: none;
+    }
+    
+    
+    .opener__hidden {
+        height: 640px;
+        display: none;
+        
+        padding-left: 132px;
+    }
+
+    .technology__form{
+        margin-top: 125px;
+        height: 148px;
+    }
+    .form__title {
+        font-size: 14px;
+        width: 165px;
+        padding-top: 24px;
+    }
+    .form__button {
+        margin: auto;
+        margin-top: 32px;
+        width: 159px;
+        height: 29px;
+        text-align: center;
+        font-size: 10px;
+        color: white;
+        padding-top: 7px;
+    }
+
+    .technology__result{
+        margin-top: 25px;
+        padding-top: 80px;
+        padding-right: 134px;
+        padding-bottom: 72px;
+    }
+    
+    .result__title {
+        display: flex;
+        margin-left: 37px;
+    }
+    .result__medal{
+        width: 23px;
+        height: 23px;
+        margin-right: 54px;
+        margin-top: 0px;
+    }
+    .result__text1 {
+        margin-left: 37px;
+        margin-top: 45px;
+        width: 300px;
+    }
+    .result__tezis {
+        width: 336px;
+        height: 135px;
+        position: relative;
+        margin: auto;
+        margin-top: 60px;
+        padding-top: 30px;
+        padding-left: 0px;
+        text-align: center;
+
+    }
+    
+    .result__tezis::before {
+        content: '';
+        position: absolute;
+        top: 0; right: 0; bottom: 0; left: 0;
+        height: 2px;
+        width: 100%;
+        border-radius: inherit;
+        background: linear-gradient(to right, black 0%, #F27300 60%);
+    }
+
+    .result__tezis::after{
+        content: '';
+        position: absolute;
+        right: 0; bottom: 0; left: 0;
+        height: 2px;
+        width: 100%;
+        border-radius: inherit;
+        background: linear-gradient(to right, black 0%, #F27300 60%);
+    } 
+
+
+    .result__text2 {
+        margin-left: 37px;
+        margin-top: 45px;
+        width: 300px;
+    }
+    
+
+
+
+
+}
+
+
+@media(min-width: 769px) and (max-width: 1022px) {
+    .technology{
+        display: none;
+    }
+}
+
+@media(min-width: 1023px) and (max-width: 1439px) {
+    .system__title {
+        margin-left: 150px;
+        display: flex;
+    }
+    .system__patent {
+        margin-left: 240px;
+    }
+    .egineer__main {
+        width: 1040px;
+        height: 2402px;
+        margin: auto;
+        margin-top: 80px;
+        padding-top: 66px;
+    }
+    .engineer__slider {
+        margin-left: 50px;
+        margin-right: 85px;
+        height: 700px;
+    
+    }
+    .engineer__slider_slide_large {
+        width: 700px;
+        margin-left: 20px;
+        height: auto;
+    }
+    .engineer__slider_slide_small {
+        width: 312px;
+        margin-left: 20px;
+    }
+    .engineer__slider_img {
+        margin: auto;
+        width: auto;
+        height: auto;
+    }
+    .engineer__slider_text {
+        margin-top: 55px;
+        width: 100%;
+        text-align: center;
+    }
+    .slider__button_block{
+        top: 650px;
+        left:750px;
+    }
+    .engineer__text {
+        margin: auto;
+        width: auto;
+        height: auto;
+        padding-top: 89px;  
+        padding-bottom: 89px;
+        padding-left: px;
+        padding-right: 138px;
+        border-width: 1px;
+        border-bottom-style: solid;
+        border-bottom-color: #C4C4C4;
+        display: block;
+        text-align: justify;
+    }
+    .en_text{
+        width: auto;
+    }
+
+    .chemistry__opener {
+        width: 100%;
+    }
+    
+
+}
+@media(min-width: 1440px) and (max-width: 1880px) {
+    .system__patent {
+        margin-left: 300px;
+    }
+    .egineer__main {
+        width: 1040px;
+        height: 2402px;
+        margin: auto;
+        margin-top: 80px;
+        padding-top: 66px;
+    }
+    .engineer__slider {
+        margin-left: 50px;
+        margin-right: 85px;
+        height: 700px;
+    
+    }
+    .engineer__slider_slide_large {
+        width: 700px;
+        margin-left: 20px;
+        height: auto;
+    }
+    .engineer__slider_slide_small {
+        width: 312px;
+        margin-left: 20px;
+    }
+    .engineer__slider_img {
+        margin: auto;
+        width: auto;
+        height: auto;
+    }
+    .engineer__slider_text {
+        margin-top: 55px;
+        width: 100%;
+        text-align: center;
+    }
+    .slider__button_block{
+        top: 650px;
+        left:750px;
+    }
+    .engineer__text {
+        margin: auto;
+        width: auto;
+        height: auto;
+        padding-top: 89px;  
+        padding-bottom: 89px;
+        padding-left: px;
+        padding-right: 138px;
+        border-width: 1px;
+        border-bottom-style: solid;
+        border-bottom-color: #C4C4C4;
+        display: block;
+        text-align: justify;
+    }
+    .en_text{
+        width: auto;
+    }
+
+    .chemistry__opener {
+        width: 100%;
+    }
+}

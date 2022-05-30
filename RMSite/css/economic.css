@@ -1,0 +1,429 @@
+.economic{
+    background-color: #FFFFFA;
+}
+
+.economic__economicBenefit {
+    margin-top: 100px;
+    width: 100%;
+    height: 719px;
+    background-color: #FFFFFA;
+    padding-top: 101px;
+    padding-left: 278px;
+    position: relative;
+}
+
+.economicBenefit__title {
+
+}
+.economicBenefit__textTop {
+    margin-top: 45px;
+}
+
+
+
+.economic__wrapper{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 45px;
+    margin-right: 140px;
+    
+}
+.economicBenefit__textLeft {
+}
+.economicBenefit__initData {
+    /* background-color: grey;
+    opacity: 0.4; */
+    width: 820px;
+    height: 324px;
+}
+.initData__title {
+    margin-top: 25px;
+    margin-left: 48px;
+}
+.initData__content {
+    margin-top: 37px;
+    width: 814px;
+    height: 225px;
+    border-radius: 15px;
+    box-shadow: 0px 0px 24px #00000029;
+    padding-top: 34px;
+}
+.initData__tezis{
+    display: flex;
+}
+.initData__point{
+    width: 8px;
+    height: 8px;
+    border-radius: 4px;
+    background-color: black;
+    margin-left: 43px;
+    margin-top: 8px;
+}
+.initData__el{
+    margin-left: 45px;
+    margin-bottom: 32px;
+}
+
+.economic__companyA {
+    width: 100%;
+    height: 892px;
+    background-color:#F8F9FA;
+    padding-top: 35px;
+}
+.companyA__title {
+    margin-left: 278px;
+}
+
+.companyA__columnNames {
+    font-family: Montserrat-Regular;
+    font-size: 15px;
+    margin-top: 41px;
+    color: #888888;
+    position: relative;
+    /* display: none; */
+}
+.columnNames__action {
+    position: absolute;
+    top: 0;
+    left: 548px;
+}
+.columnNames__time {
+    position: absolute;
+    top: 0;
+    left: 1100px;
+}
+.columnNames__cost {
+    position: absolute;
+    top: 0;
+    left: 1365px;
+}
+
+
+.company__wrapper {
+    position: relative;
+    /* background-color: red; */
+    margin-bottom: 100px;
+}
+.company__left {
+    position: absolute;
+    top: 240px;
+    left: 140px;
+
+}
+.company__right {
+    position: absolute;
+    top: 40px;
+    left: 416px;
+    width: 1485px;
+    height: 460px;
+    /* background-color: grey; */
+    position: relative;
+    padding-top: 35px;
+}
+.company__right::before {
+    content: '';
+    position: absolute;
+    top: 0; right: 0; bottom: 0; left: 0;
+    width: 2px;
+    max-height: 100%;
+    border-radius: inherit;
+    background: linear-gradient(to bottom, black 0%, #F27300 60%);
+}
+.row{
+    display: flex;
+    margin-left: 128px;
+    margin-bottom: 60px;
+    height: auto;
+    /* background-color: #fff; */
+}
+
+.Col__tezis{
+    display: flex;
+    font-family: Montserrat-Bold;
+    font-size: 20px;
+}
+.Col__point{
+    flex-shrink: 0;
+    width: 8px;
+    height: 8px;
+    border-radius: 4px;
+    background-color: black;
+    margin-left: 0px;
+    margin-top: 10px;
+}
+.Col__el{
+     margin-left:15px;
+}
+
+._action{
+    width: 495px;
+}
+
+._time{
+    width: 239px;
+    margin-left: 64px;
+}
+._cost{
+    margin-left: 30px;
+}
+
+.company__conclusion {
+    margin-left: 278px;
+}
+.conclusion__title {
+}
+.conclusion__text {
+    margin-top: 45px;
+}
+
+.economic__companyB {
+    width: 100%;
+    height: auto;
+    background-color:#F8F9FA;
+    padding-top: 35px;
+}
+
+.economic__final {
+    background-color:#F8F9FA;
+    padding-top: 207px;
+    padding-left: 270px;
+}
+.final__title {
+}
+.final__text {
+    margin-top: 67px;
+    padding-bottom: 200px;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+.attantion__mobile{
+    display: none;
+}
+
+@media(max-width: 768px){
+    .economic{
+        display: none;
+    }
+    .attantion__mobile{
+        display: block;
+        font-family: Montserrat-Bold;
+        font-size: 20px;
+        display: block;
+        width: 300px;
+        height: 700px;
+        margin: auto;
+        margin-top: 52px;
+        padding-top: 100px;
+        text-align: center;
+        opacity: 0.4;
+    }
+    
+    .economic__economicBenefit {
+        margin-top: 52px;
+        width: 100%;
+        height: auto;
+        padding-top: 61px;
+        padding-left: 27px;
+        position: relative;
+    }
+    
+    .economicBenefit__textTop {
+        margin-top: 30px;
+        width: 300px;
+    }
+    
+    .economic__wrapper{
+        display: block;
+        justify-content: space-between;
+        margin: auto;
+        margin-top: 30px;
+        
+    }
+    .economicBenefit__textLeft {
+    }
+    .economicBenefit__initData {
+        width: 100%;
+        height: auto;
+    }
+
+    .initData__title {
+        margin-top: 45px;
+        margin-left: 10px;
+    }
+    .initData__content {
+        margin: auto;
+        margin-top: 37px;
+        width: 300px;
+        height: 308px;
+        padding-top: 34px;
+    }
+    .initData__tezis{
+        display: flex;
+        
+    }
+    .initData__point{
+        width: 8px;
+        height: 8px;
+        border-radius: 4px;
+        background-color: black;
+        margin-left: 25px;
+        margin-top: 8px;
+    }
+    .initData__el{
+        margin-left: 20px;
+        margin-bottom: 32px;
+        width: 220px;
+        /* background-color: red; */
+    }
+
+    .economic__companyA {
+        width: 100%;
+        height: auto;
+        background-color:#F8F9FA;
+        padding-top: 35px;
+    }
+    .companyA__title {
+        margin-left: 37px;
+    }
+
+}
+
+@media(min-width: 769px) and (max-width: 1022px) {
+    .economic{
+        display: none;
+    }
+}
+@media(min-width: 1023px) and (max-width: 1439px) {
+    .economic__economicBenefit {
+        padding-left: 100px;
+    }
+    .economic__wrapper{
+        margin-left: 0;
+        margin-right: 10px;
+    }
+    .economicBenefit__initData {
+        width: 550px;
+        height: auto;
+    }
+    .initData__title {
+        margin-top: 25px;
+        margin-left: 48px;
+    }
+    .initData__content {
+        margin-top: 37px;
+        width: auto;
+        height: auto;
+        padding-top: 34px;
+    }
+    .company__left {
+        left: 30px;
+    }
+    .company__right {
+        top: 40px;
+        left: 250px;
+        width: 1200px;
+        height: 460px;
+        width: 700px;
+    }
+    
+    .row{
+        margin-left: 50px;
+        width: 750px;
+    }
+    
+    .Col__tezis{
+        font-size: 14px;
+    }
+    
+    ._action{
+        width: 300px;
+    }
+    
+    ._time{
+        width: 159px;
+        margin-left: 20px;
+    }
+    ._cost{
+        width: 230px;
+        margin-left: 20px;
+
+    }
+    .companyA__columnNames {
+        font-size: 12px;
+    }
+    .columnNames__action {
+        left: 325px;
+    }
+    .columnNames__time {
+        left: 645px;
+    }
+    .columnNames__cost {
+        left: 815px;
+    }
+}
+@media(min-width: 1440px) and (max-width: 1880px) {
+    .economic__wrapper{
+        margin-right: 10px;
+    }
+    .economicBenefit__initData {
+        width: 650px;
+        height: auto;
+    }
+    .initData__title {
+        margin-top: 25px;
+        margin-left: 48px;
+    }
+    .initData__content {
+        margin-top: 37px;
+        width: auto;
+        height: auto;
+        padding-top: 34px;
+    }
+
+    .company__left {
+        left: 70px;
+    }
+    .company__right {
+        top: 40px;
+        left: 320px;
+        width: 1100px;
+        height: 460px;
+    }
+    
+    .row{
+        width: 1000px;
+        margin-left: 50px;
+    }
+    
+    .Col__tezis{
+        font-size: 18px;
+    }
+    
+    ._action{
+        width: 400px;
+    }
+    
+    ._time{
+        width: 239px;
+        margin-left: 64px;
+    }
+    ._cost{
+        width: 400px;
+        margin-left: 30px;
+
+    }
+    .columnNames__action {
+        left: 400px;
+    }
+    .columnNames__time {
+        left: 850px;
+    }
+    .columnNames__cost {
+        left: 1120px;
+    }
+    
+}

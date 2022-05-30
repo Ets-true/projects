@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Department - каталог услуг</title>
+    <meta name="description" content="Разрабатываем сайты, помогаем бизнесу" />
+    <meta property="og:image" content="../media/img/opengraph.jpg">
+    <link rel="shortcut icon" type="image/png" href="../media/img/favicon.ico">
+
+    <link rel="stylesheet" type="text/css" href="../css/reset.min.css" />
+    <link rel="stylesheet" type="text/css" href="../css/catalog.min.css" />
+    <link rel="stylesheet" type="text/css" href="../css/fonts.css" />
+
+
+    <script src="../js/lib-min.js"> </script>
+    <!-- <script src="../js/catalog/functions.js"> </script> -->
+    <script src="../js/catalog/main.js"> </script>
+
+    <script src="../js/dragDrop.js"> </script>
+    <script src="../js/catalog.js"> </script>
+    <script src="js/card.js"> </script>
+</head>
+
+<body>
+
+    <a href="/" id="Logo">
+        <div class="logo">
+            <div class="logo_top">department</div>
+            <div class="logo_bottom">разработка сайтов</div>
+        </div>
+    </a>
+
+    <div class="adaptive_wrapper">
+        <div class="catalog">
+            <div class="catalog__title">Выберите тип сайта</div>
+            <div class="row">
+                <div class="column" id="landing">
+                    <div class="column__title">Landing page</div>
+                    <div class="column__tags">
+                        <div class="tag__row">
+                            <div class="tag ls"><div class="dott"></div>CTR</div>
+                            <div class="tag"><div class="dott"></div>Контекстная реклама</div>
+                        </div>
+                        <div class="tag__row">
+                            <div class="tag"><div class="dott"></div>Таргетинг</div>
+                            <div class="tag"><div class="dott"></div>Продажи</div>
+                            <div class="tag"><div class="dott"></div>SMM</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="column" id="company">
+                    <div class="column__title">Сайт компании</div>
+                    <div class="column__tags">
+                        <div class="tag__row perspective">
+                            <div class="tag"><div class="dott"></div>Перспектива</div>
+                        </div>
+                        <div class="tag__row">
+                            <div class="tag ls"><div class="dott"></div>Бренд</div>
+                            <div class="tag"><div class="dott"></div>Масштабирование</div>
+                        </div>
+                        <div class="tag__row">
+                            <div class="tag ls"><div class="dott"></div>Обратная связь</div>
+                            <div class="tag"><div class="dott"></div>Престиж</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="column" id="shop">
+                    <div class="column__title">Интернет-магазин</div>
+                    <div class="column__tags">
+                        <div class="tag__row">
+                            <div class="tag"><div class="dott"></div>Товары</div>
+                            <div class="tag"><div class="dott"></div>Корзина</div>
+                            <div class="tag"><div class="dott"></div>Отзывы</div>
+                        </div>
+                        <div class="tag__row">
+                            <div class="tag"><div class="dott"></div>Платежная система</div>
+                            <div class="tag"><div class="dott"></div>Акции</div>
+                        </div>
+                    </div>
+                   
+                </div>
+                <div class="column" id="info">
+                    <div class="column__title">Информационный портал</div>
+                    <div class="column__tags">
+                        <div class="tag__row">
+                            <div class="tag"><div class="dott"></div>Публикации</div>
+                            <div class="tag"><div class="dott"></div>СМИ</div>
+                            <div class="tag"><div class="dott"></div>Контент</div>
+                        </div>
+                        <div class="tag__row">
+                            <div class="tag"><div class="dott"></div>Разделы</div>
+                            <div class="tag"><div class="dott"></div>Категории</div>
+                            <div class="tag"><div class="dott"></div>Форум</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="column" id="redisign">
+                    <div class="column__title">Редизайн</div>
+                    <div class="alert">
+                        Выберите, какой сайт<br>
+                        вы хотите изменить
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="adaptive_wrapper">
+        <div class="purchase">
+            <div class="purchase__title">
+                Тип разработки:
+                <div class="choise">
+                    <span class="choose" id="choose">Не выбран</span>
+                    <div class="line_body">
+                        <div class="line_go"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="purchase__content">
+                <div class="purchase__info">
+                    <div class="purchase__text">
+                        Чтобы с нами связаться, скачайте и заполните файл с <br>
+                        вопросами, уточняющие ваши желания по поводу сайта
+                    </div>
+                    <div class="purchase__link">
+                        <div class="icon"><img src="../media/icons/file_catalog.svg" alt=""></div>
+                        <a href="../media/files/brief_department.docx" class="link" id="document" download>brief_department.docx</a>
+                    </div>
+                    <div class="buttonSuccess">
+                        <button type="button" name="button" id="sendMail">Связаться</button>
+                        <div class="success" id="Success">Запрос отправлен</div>
+                    </div>
+                </div>
+                <div class="purchase__dragdrop">
+                    <label for="file">
+                        
+                        <img src="../media/icons/arrow_catalog.svg" alt="" class="img-svg">
+                        
+                        <span class="input__file">Прикрепите файл&nbsp</span> или перетащите
+                    </label> 
+                    <input type="file" name="files[]" id="file" data-multiple-caption="{count} files selected" multiple>
+                    <!-- <div class="DownloadedFile">
+                        <div class="delete"></div>
+                        <span class="fileName">brief_landing_department_2022.docx</span>
+                    </div> -->
+                </div>
+            </div>
+        </div>
+        
+        <div class="form__info">
+            <div class="info__phone">+7 (495) 970 70 82</div>
+            <div class="info__copyright">Copyright  2022</div>
+            <div class="info__mail">connect@departmentview.ru</div>
+        </div>
+    </div>
+
+    <div class="mobile">
+        Данная страница доступна к <br>
+        посмотру только с комьютера
+    </div>
+
+    <!-- Yandex.Metrika counter -->
+    <script type="text/javascript" >
+        (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+        m[i].l=1*new Date();k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+        (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+
+        ym(86680450, "init", {
+            clickmap:true,
+            trackLinks:true,
+            accurateTrackBounce:true,
+            webvisor:true
+        });
+    </script>
+    <noscript><div><img src="https://mc.yandex.ru/watch/86680450" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+    <!-- /Yandex.Metrika counter -->
+</body>
+
+</html>

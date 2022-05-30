@@ -1,0 +1,297 @@
+/* Указываем box sizing */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Убираем внутренние отступы */
+ul[class],
+ol[class] {
+  padding: 0;
+}
+
+/* Убираем внешние отступы */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+ul[class],
+ol[class],
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+/* Выставляем основные настройки по-умолчанию для body */
+body {
+  min-height: 100vh;
+  scroll-behavior: smooth;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+
+/* Удаляем стандартную стилизацию для всех ul и il, у которых есть атрибут class*/
+ul[class],
+ol[class] {
+  list-style: none;
+}
+
+/* Элементы a, у которых нет класса, сбрасываем до дефолтных стилей */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+/* Упрощаем работу с изображениями */
+img {
+  max-width: 100%;
+  display: block;
+}
+
+/* Указываем понятную периодичность в потоке данных у article*/
+article > * + * {
+  margin-top: 1em;
+}
+
+/* Наследуем шрифты для инпутов и кнопок */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* Удаляем все анимации и переходы для людей, которые предпочитай их не использовать */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+ul{
+  white-space: nowrap;
+  margin: 0;
+  padding: 0;
+  line-height:0;
+  font-size: 0;
+}
+
+li{
+  margin: 0;
+  padding: 0;
+  line-height:0;
+  font-size: 0;
+}
+
+
+h1{
+  z-index: 100;
+  font-family: 'Video';
+  font-size: 50px;
+  text-align: left;
+  color: white;
+}
+
+p{
+  margin-top: 20px;
+  z-index: 100;
+  font-family: 'Calibri';
+  font-size: 23px;
+  color: white;
+}
+
+a{
+  text-decoration: none;
+}
+.loading__info_name{
+  font-family: 'Roboto-Light';
+  font-size: 38px;
+  margin-right: 37px;
+}
+
+body{
+  margin: 0;
+  padding: 0;
+}
+img {
+  image-rendering: optimizeQuality;
+  -webkit-backface-visibility: hidden; 
+  -ms-transform: translateZ(0); /* IE 9 */
+  -webkit-transform: translateZ(0); /* Chrome, Safari, Opera */
+  transform: translateZ(0);
+}
+
+.content__container{
+  /* background-color: red; */
+  width: 100%;
+  height: 100%;
+  max-width: 2000px;
+  margin: auto;
+ 
+}
+
+.attantion{
+  display: none;
+}
+
+
+
+
+@media(max-width: 1024px) {
+  h1 {
+    font-size: 25px;
+    padding-left: var(--paddingLeft);
+  }
+  p{
+    font-size: 15px;
+    margin-top: 24px;
+    max-width: 320px;
+    padding-left: var(--paddingLeft);
+    line-height: 18px;
+  }
+}
+
+@media(min-width: 1024px) and (max-width: 1919px) {
+  h1 {
+    font-size: calc(26px + (50 - 26) * ((100vw - 1024px) / (1920 - 1024)));
+  }
+  p{
+    font-size: calc(12px + (23 - 12) * ((100vw - 1024px) / (1920 - 1024)));
+    margin-top: calc(10px + (20 - 10) * ((100vw - 1024px) / (1920 - 1024)));
+  }
+  
+}
+
+
+/* @media(min-width: 1040px) and (max-width: 1440px) {
+  h1 {
+    font-size: 37px;
+  }
+  p{
+    font-size: 17px;
+  }
+}
+
+@media(min-width: 1441px) and (max-width: 1640px) {
+  h1 {
+    font-size: 45px;
+  }
+  p{
+    font-size: 19px;
+  }
+} */
+
+
+
+@media(min-width: 1920px) {
+  h1 {
+    font-size: calc(50px + (55 - 50) * ((100vw - 1920px) / (2560 - 1920)));
+  }
+  p{
+    font-size: calc(23px + (25 - 23) * ((100vw - 1920px) / (2560 - 1920)));;
+  }
+
+  /* h1{
+    z-index: 100;
+    font-family: 'Video';
+    font-size: 50px;
+    text-align: left;
+    color: white;
+  }
+  
+  p{
+    margin-top: 20px;
+    z-index: 100;
+    font-family: 'Calibri';
+    font-size: 23px;
+    color: white;
+  } */
+
+}
+
+
+/* @media(max-width: 768px){
+    h1{
+      font-size: 18px;
+    }
+    
+    h2{
+      font-size: 16px;
+    }
+    
+    p{
+      font-size: 14px;
+      line-height: 18px
+    }
+    .wow{
+      animation-name: none !important;
+      visibility: visible !important;
+    }
+}
+
+@media(min-width: 769px) and (max-width: 1022px) {
+  .attantion{
+    font-family: Montserrat-Bold;
+    font-size: 20px;
+    display: block;
+    width: 600px;
+    margin: auto;
+    margin-top: 150px;
+    text-align: center;
+    opacity: 0.4;
+  }
+  h1{
+    font-size: 22px;
+  }
+  
+  h2{
+    font-size: 18px;
+  }
+  
+  p{
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+}
+
+@media(min-width: 1023px) and (max-width: 1439px) {
+  h1{
+    font-size: 25px;
+  }
+  
+  h2{
+    font-size: 20px;
+  }
+  
+  p{
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+}
+
+@media(min-width: 1440px) and (max-width: 1880px) {
+  h1{
+    font-size: 25px;
+  }
+  
+  h2{
+    font-size: 20px;
+  }
+  
+  p{
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+} */

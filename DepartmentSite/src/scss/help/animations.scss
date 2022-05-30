@@ -1,0 +1,33 @@
+@keyframes mouse_animation {
+    0%{
+        transform: translateY(var(--animationHeight1));
+    }
+    12.5%{
+        transform: translateY(var(--animationHeight2));
+    }
+    25%{
+        transform: translateY(var(--animationHeight1));
+    }
+
+    37.5%{
+        transform: translateY(var(--animationHeight2));
+    }
+
+    50%{
+        transform: translateY(var(--animationHeight1));
+    }
+    100%{
+        transform: translateY(var(--animationHeight1));
+    }
+}
+
+@keyframes letter {
+    0%{
+        opacity: 0;
+        transform: translateX(5px) scale(0.6, 0.6) rotateY(180deg);
+    }
+    100%{
+        opacity: 1;
+        transform: translateX(0px) scale(1, 1) rotateY(0deg);
+    }
+}

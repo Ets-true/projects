@@ -1,0 +1,47 @@
+.crumbs {
+    font-family: Montserrat-Regular;
+    font-size: 15px;
+    position: absolute;
+    top:32px;
+    left: 140px;
+    display: flex;
+   
+}
+.crumbs__arrow{
+    margin-top: -1px;
+    transition: all 1s;
+    transform: rotate(0deg);
+}
+
+.crumbs:hover >.crumbs__arrow {
+    transition: all 1s;
+    transform: rotate(-180deg);
+}
+
+
+@media(max-width:768px){
+    .crumbs {
+        
+        font-size: 10px;
+        position: absolute;
+        top: 18px;
+        left: 20px;
+        display: flex;
+        display: none;
+       
+    }
+    .crumbs__main{
+        display: none;
+    }
+    .crumbs__arrow{
+        margin-top: 0px;
+        transition: none;
+        transform: rotate(180deg);
+        width: 14px;
+        height: auto;
+    }v
+    
+    .crumbs:hover >.crumbs__arrow {
+        transition: none;
+    }
+}
